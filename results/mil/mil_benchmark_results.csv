@@ -1,0 +1,10 @@
+Dataset,Model,Mean_AUC,Std_Dev,Trials
+tiger,kf_pooling,0.8734,0.014,5
+tiger,hf_pooling,0.8352,0.015,5
+tiger,ein_pooling,0.892,0.0094,5
+fox,kf_pooling,0.66,0.0232,5
+fox,hf_pooling,0.6054,0.0258,5
+fox,ein_pooling,0.6292,0.0241,5
+elephant,kf_pooling,0.912,0.0082,5
+elephant,hf_pooling,0.9165,0.0042,5
+elephant,ein_pooling,0.9304,0.0042,5
