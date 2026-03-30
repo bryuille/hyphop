@@ -105,6 +105,7 @@ def get_tiny_imagenet_loaders(
         shuffle=True,
         num_workers=num_workers,
         pin_memory=pin_memory,
+        persistent_workers=num_workers > 0,
     )
     test_loader = DataLoader(
         test_ds,
@@ -112,6 +113,7 @@ def get_tiny_imagenet_loaders(
         shuffle=False,
         num_workers=num_workers,
         pin_memory=pin_memory,
+        persistent_workers=num_workers > 0,
     )
 
     in_dim = 64 * 64 * 3

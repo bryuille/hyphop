@@ -34,7 +34,7 @@ def test(model, device, test_loader):
             data, target = data.to(device), target.to(device)
             output = model(data)
             probs.extend(torch.sigmoid(output).cpu().numpy())
-            labels.extend(target.numpy())
+            labels.extend(target.cpu().numpy())
 
     return roc_auc_score(labels, probs)
 
