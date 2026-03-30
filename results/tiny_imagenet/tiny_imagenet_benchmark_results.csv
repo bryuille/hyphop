@@ -1,0 +1,4 @@
+Model,Hidden Dim,Mean Accuracy,Std Dev
+kf_attention,64,10.22%,0.22%
+hf_attention,64,9.78%,0.22%
+ein_attention,64,10.36%,0.25%
