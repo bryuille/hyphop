@@ -1,7 +1,8 @@
 ## Overview
 
-This project benchmarks three attention families on two tasks:
+This project benchmarks three attention families on three tasks:
 - **MNIST** (classification)
+- **Tiny ImageNet** (classification)
 - **MIL** (AUC on tiger/fox/elephant)
 
 Implemented model families:
@@ -95,6 +96,22 @@ Current benchmark defaults:
 
 Output:
 - `results/mnist/mnist_benchmark_results.csv`
+
+### Tiny ImageNet Table (`run_tiny_imagenet.py`)
+
+```bash
+python run_tiny_imagenet.py
+```
+
+Current benchmark defaults:
+- Models: `["kf_attention", "hf_attention", "ein_attention"]`
+- Hidden dim: `64`
+- Trials: `5` (seeds `42..46`)
+- Epochs: `14`
+- Optimizer/LR/Gamma: `AdamW`, `0.001`, `0.96`
+
+Output:
+- `results/tiny_imagenet/tiny_imagenet_benchmark_results.csv`
 
 ### MIL Table (`run_mil_table.py`)
 
